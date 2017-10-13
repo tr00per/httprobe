@@ -1,0 +1,36 @@
+name:                httprobe
+version:             "1.0"
+synopsis:            Simple HTTP probe, that will acknowledge everything and print it to stdout
+homepage:            https://github.com/githubuser/mno#readme
+license:             GPL-3
+license-file:        LICENSE
+author:              Artur Czajka
+maintainer:          arturczajka@gmail.com
+copyright:           2016 Artur Czajka
+category:            Web
+
+dependencies:
+    - base
+
+library:
+    exposed-modules:
+        - Network.HTTP.Probe
+    source-dirs: src
+    dependencies:
+        - mtl
+        - http-types
+        - bytestring
+        - text
+        - aeson
+        - extra
+        - case-insensitive
+        - servant-server
+        - wai
+        - warp
+
+executables:
+    httprobe:
+        source-dirs: app
+        main: Main.hs
+        dependencies:
+            - httprobe
