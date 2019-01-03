@@ -6,7 +6,7 @@ license:             GPL-3
 license-file:        LICENSE
 author:              Artur Czajka
 maintainer:          arturczajka@gmail.com
-copyright:           2016 Artur Czajka
+copyright:           2016-2018 Artur Czajka
 category:            Web
 
 dependencies:
@@ -30,6 +30,7 @@ library:
 
 executables:
     httprobe:
+        ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
         source-dirs: app
         main: Main.hs
         dependencies:
