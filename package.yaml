@@ -27,6 +27,7 @@ library:
         - servant-server
         - wai
         - warp
+        - random
 
 executables:
     httprobe:
