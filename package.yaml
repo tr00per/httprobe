@@ -1,7 +1,7 @@
 name:                httprobe
-version:             "1.0"
+version:             "2.0"
 synopsis:            Simple HTTP probe, that will acknowledge everything and print it to stdout
-homepage:            https://github.com/githubuser/mno#readme
+homepage:            https://github.com/tr00per/httprobe/blob/master/README.md
 author:              Artur Czajka
 maintainer:          arturczajka@gmail.com
 copyright:           2016-2018 Artur Czajka
